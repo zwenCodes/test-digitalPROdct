@@ -1,7 +1,7 @@
 var btn1 = document.getElementById("btn1");
 var btn2 = document.getElementById("btn2");
 var side = document.getElementById("aside");
-const rndom = Math.floor(Math.random() * 1000) + 500;
+const rndom = Math.floor(Math.random() * 1000) + 501;
 
 
 
