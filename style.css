@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 15pt;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #E1CECE;
+    padding: 0px 40px;
+}
+
+/* header start */
+header {
+    position: sticky;
+    top: 0;
+}
+
+header form {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 242, 294, 0.3);
+    backdrop-filter: blur(3px);
+    --webkit-backdrop-filter: blur(3px);
+    padding: 0 10px;
+}
+
+header form .bi-list {
+    color: #ff9696;
+    font-weight: bold;
+}
+
+header form div {
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+    animation: body_fade 2s ease alternate;
+}
+
+header form div input[type="search"] {
+    border: 1px solid #ccc;
+    background-color: rgb(255, 242, 294, 0.3);
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    
+}
+
+header form div input[type="search"]::placeholder {
+    color: #acc;
+    font-style: italic;
+}
+
+header form div input[type="search"]:focus {
+    border-color: #A1CECE;
+    box-shadow: 0 0 5px rgba(0, 123, 255, .2);
+}
+
+header form div button[type="submit"] {
+    background-color: rgb(255, 242, 294, 0.1);
+    outline: none;
+    border: 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+header form div button:hover {
+    text-shadow: 0 0 11px red;
+}
+
+/* aside start */
+
+aside {
+    position: absolute;
+    display: none ;
+    top: 0;
+    height: 100%;
+    width: 30%;
+    background-color: rgb(255, 242, 294, 0.3);
+backdrop-filter: blur(1px);
+--webkit-backdrop-filter: blur(1px);
+ animation: aside 1s ease; 
+}
+
+aside div {
+    position: relative;
+}
+
+aside .x {
+    position: absolute ;
+    right: 0;
+    top: 0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+/* aside .x:hover{
+    color: #ff7c7c;
+}
+ */
+aside img {
+    margin: 0;
+    width: 70px;
+}
+aside ul li {
+    list-style: none;
+}
